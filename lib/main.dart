@@ -1,6 +1,4 @@
 import 'package:coffee_shop_youtube/detail_page.dart';
-import 'package:coffee_shop_youtube/home_page.dart';
-import 'package:coffee_shop_youtube/login_google_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
