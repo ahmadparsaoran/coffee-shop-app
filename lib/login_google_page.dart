@@ -35,7 +35,8 @@ class LoginGooglePage extends StatelessWidget {
                   color: Colors.black.withOpacity(0.3),
                   elevation: 8.0,
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8)),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                   child: Column(children: [
                     Padding(
                       padding: const EdgeInsets.all(16.0),

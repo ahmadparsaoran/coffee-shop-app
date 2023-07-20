@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class DetailPage extends StatefulWidget {
@@ -14,6 +12,7 @@ class _DetailPageState extends State<DetailPage> {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
+    // ignore: unused_local_variable
     double widht = MediaQuery.of(context).size.width;
     return Scaffold(
       body: SingleChildScrollView(
@@ -31,7 +30,9 @@ class _DetailPageState extends State<DetailPage> {
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage("assets/coffee_3.jpg"))),
+                          image: AssetImage("assets/coffee_3.jpg")
+                          )
+                      ),
                 ),
                 Positioned(
                     top: 16,
@@ -44,8 +45,10 @@ class _DetailPageState extends State<DetailPage> {
                       padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
                           color: Colors.grey,
-                          borderRadius: BorderRadius.all(Radius.circular(20))),
-                    )),
+                          borderRadius: BorderRadius.all(Radius.circular(20))
+                          ),
+                       )
+                    ),
                 Positioned(
                     top: 16,
                     right: 16,
@@ -57,8 +60,10 @@ class _DetailPageState extends State<DetailPage> {
                       padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
                           color: Colors.grey,
-                          borderRadius: BorderRadius.all(Radius.circular(20))),
-                    )),
+                          borderRadius: BorderRadius.all(Radius.circular(20))
+                          ),
+                       )
+                    ),
                 Container(
                     child: Padding(
                       padding: const EdgeInsets.all(16),
@@ -74,7 +79,10 @@ class _DetailPageState extends State<DetailPage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(20),
-                            topRight: Radius.circular(20))))
+                            topRight: Radius.circular(20),
+                        )
+                    )
+                 )
               ],
             ),
             // Row rating dan jam buka
@@ -93,7 +101,8 @@ class _DetailPageState extends State<DetailPage> {
                         width: 5,
                       ),
                       Text("4.6 (32 review)",
-                          style: GoogleFonts.montserrat(fontSize: 12))
+                          style: GoogleFonts.montserrat(fontSize: 12)
+                        )
                     ],
                   ),
                   Row(
@@ -106,7 +115,8 @@ class _DetailPageState extends State<DetailPage> {
                         width: 5,
                       ),
                       Text("10.00 - 22.00 wib",
-                          style: GoogleFonts.montserrat(fontSize: 12))
+                          style: GoogleFonts.montserrat(fontSize: 12)
+                        )
                     ],
                   )
                 ],
@@ -130,7 +140,8 @@ class _DetailPageState extends State<DetailPage> {
                             style: GoogleFonts.montserrat(fontSize: 12),
                           ),
                           Text("Dapatkan diskon 100 ribu",
-                              style: GoogleFonts.montserrat(fontSize: 11)),
+                              style: GoogleFonts.montserrat(fontSize: 11)
+                          ),
                         ],
                       ),
                       ElevatedButton(onPressed: () {}, child: Text("Tukar"))
@@ -144,13 +155,14 @@ class _DetailPageState extends State<DetailPage> {
             TitleDetail(
                 title: "Alamat",
                 detail:
-                    "Jl. Kenangan Bunga No 3 RT XX RW YY\nBekasi Jawa Barat"),
-
+                    "Jl. Kenangan Bunga No 3 RT XX RW YY\nBekasi Jawa Barat"
+                ),
             // Deskripsi
             TitleDetail(
                 title: "Deskripsi",
                 detail:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."),
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+              ),
 
             // Title Ulasan / Comment
 
@@ -166,7 +178,8 @@ class _DetailPageState extends State<DetailPage> {
             // Widget Ulasan / Comment
             Comment(), Comment(), Comment(), Comment()
           ],
-        )),
+        )
+        ),
       ),
     );
   }
@@ -214,7 +227,8 @@ class Comment extends StatelessWidget {
           ),
           Text(
               style: GoogleFonts.montserrat(fontSize: 12),
-              " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ")
+              " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+          )
         ],
       ),
     );
